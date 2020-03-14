@@ -58,21 +58,26 @@ h5 {
 	height: 100vh;
 	width: 100vw;
 	background: black;
+	z-index: 1000;
+	position: absolute
 }
 
 #splash-container {
-	background: #a0a00f;
+	background: #bbbb20;
 	color: black;
 	font-family: neue-haas-unica,sans-serif;
-	z-index: 100;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 40px;
 }
 
+#splashpage-content {
+	/* position: fixed; */
+}
+
 #splash-text {
 	margin-top: 0;
-	padding-bottom: 20px;
+	padding-bottom: 10px; 
 }
 
 #splash-container, .media-links {
@@ -81,7 +86,7 @@ h5 {
 }
 
 #business-title {
-	font-family: Faune Italic;
+	font-family: Faune;
 }
 
 .contact {
