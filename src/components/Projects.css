@@ -1,0 +1,18 @@
+#projects-page {
+	overflow: hidden;
+	margin: 0;
+	min-height: 100vh;
+	width: 100%;
+	z-index: 1000;
+	/* padding-top: 90px; */
+
+	background:
+    	linear-gradient(140deg, rgb(245, 245, 245), rgba(0, 66, 128, 0) 120.71%),
+		linear-gradient(50deg, rgb(223, 184, 183), rgba(0, 107, 112, 0) 70%),
+		linear-gradient(10deg, rgb(218, 213, 213), rgba(239, 33, 117, 0) 100%);
+}
+
+.project__img {
+	width: 100%;
+	position: relative;
+}
