@@ -1,3 +1,62 @@
+
+@font-face {
+  font-family: 'Suisse Int';
+  src: url('../src/assets/fonts/Suisse\ BP\ Int\ Regular.otf');
+}
+
+@font-face {
+  font-family: 'San Fransico';
+  src: url('../src/assets/fonts/SanFranciscoDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Faune';
+  src: url('../src/assets/fonts/Faune-TextRegular.otf');
+}
+
+@font-face {
+  font-family: 'Faune Italic';
+  src: url('../src/assets/fonts/Faune-TextItalic.otf');
+}
+
+@font-face {
+  font-family: 'Haas';
+  src: url('../src/assets/fonts/NHaasGroteskTXPro-55Rg.ttf');
+}
+
+@font-face {
+  font-family: 'Publico Roman';
+  src: url('../src/assets/fonts/Publico-Roman.otf');
+}
+
+::selection {
+  background-color: transparent;
+  color: #6e6e6e;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: transparent;
+  color: #6e6e6e;
+}
+
+/***For Other Browsers ***/
+/* ::-o-selection {
+  background-color: #352e7e;
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: #352e7e;
+  color: #fff;
+} */
+
+/*** For Webkit ***/
+/* ::-webkit-selection {
+  background-color: #352e7e;
+  color: #fff;
+} */
+
 html, .root {
   font-size: 18px;
   line-height: 27px;
@@ -65,34 +124,4 @@ sup {
 }
 sub {
   bottom: -0.25em;
-}
-
-@font-face {
-  font-family: 'Suisse Int';
-  src: url('../src/assets/fonts/Suisse\ BP\ Int\ Regular.otf');
-}
-
-@font-face {
-  font-family: 'San Fransico';
-  src: url('../src/assets/fonts/SanFranciscoDisplay-Regular.otf');
-}
-
-@font-face {
-  font-family: 'Faune';
-  src: url('../src/assets/fonts/Faune-TextRegular.otf');
-}
-
-@font-face {
-  font-family: 'Faune Italic';
-  src: url('../src/assets/fonts/Faune-TextItalic.otf');
-}
-
-@font-face {
-  font-family: 'Haas';
-  src: url('../src/assets/fonts/NHaasGroteskTXPro-55Rg.ttf');
-}
-
-@font-face {
-  font-family: 'Publico Roman';
-  src: url('../src/assets/fonts/Publico-Roman.otf');
 }

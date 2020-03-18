@@ -1,10 +1,10 @@
 #splash-text {
 	position: relative;
-	font-family: Suisse Int;
 	top: 100px
 }
 
 .splashpage-banner {
+	font-family: halyard-micro,sans-serif;
 	position: absolute;
 	top: 0px;
 	width: 2325px;
@@ -17,13 +17,13 @@
 }
 
 #splash-container {
+	font-family: Suisse Int;
 	background:
     linear-gradient(140deg, rgb(0, 66, 128,1), rgba(0, 66, 128, 0.3) 120.71%),
 		linear-gradient(20deg, rgb(0, 107, 112, 1), rgba(0, 107, 112, 0.3) 70%),
 		linear-gradient(10deg, rgb(223, 213, 213, 1), rgba(239, 33, 117, 0) 100%);
 	background: rgb(20, 20, 20);
 	color: white;
-	font-family: halyard-micro,sans-serif;
 	font-weight: 200;
 	font-style: normal;
 	padding-left: 15px;

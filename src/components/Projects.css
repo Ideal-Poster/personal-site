@@ -1,18 +1,51 @@
 #projects-page {
+	position: absolute;
 	overflow: hidden;
 	margin: 0;
 	min-height: 100vh;
 	width: 100%;
 	z-index: 1000;
-	/* padding-top: 90px; */
-
 	background:
-    	linear-gradient(140deg, rgb(245, 245, 245), rgba(0, 66, 128, 0) 120.71%),
+    linear-gradient(140deg, rgb(245, 245, 245), rgba(0, 66, 128, 0) 120.71%),
 		linear-gradient(50deg, rgb(223, 184, 183), rgba(0, 107, 112, 0) 70%),
 		linear-gradient(10deg, rgb(218, 213, 213), rgba(239, 33, 117, 0) 100%);
+}
+
+.projects-banner {
+	margin-top: 0px;
+	color: white;
+	position: absolute;
+	top: 0;
+	width: 2266px;
+	color: black;
+}
+
+.projects-banner-extension {
+	left: 2276px;
+	width: 2266px;
+}
+
+#projects-container {
+	margin-top: 60px;
+	padding-bottom: 120px;
+}
+
+.project-container {
+	padding-bottom: 40px;
 }
 
 .project__img {
 	width: 100%;
 	position: relative;
+}
+
+.splashpage-banner {
+	position: absolute;
+	top: 0px;
+	width: 2325px;
+	margin: 0;
+}
+
+#projects-container {
+	padding-top: 100px;
 }

@@ -4,16 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import { Row } from 'react-bootstrap';
 import anime from 'animejs';
-import CircleType from 'circletype';
-
-import charming from 'charming';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLongArrowAltDown } from "@fortawesome/free-solid-svg-icons"
-
-library.add(faLongArrowAltDown)
-
 
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 // Equation of a line (y = mx + b ).
@@ -62,40 +52,24 @@ class Home extends React.Component {
 	componentDidMount() {
 		anime({
 			targets: '.splashpage-banner',
-			translateX: 'calc(-100% - 18px)',
+			translateX: 'calc(-100% - 20px)',
 			duration: '18000',
 			easing: 'linear',
 			loop: true
 		});
-
-		// Instantiate `CircleType` with an HTML element.
-		// const circleType = new CircleType(document.getElementById('scroll-down'));
-		// Set the text radius and direction. Note: setter methods are chainable.
-		// circleType.radius(86).dir(1);
 	}
-
-	// componentDidMount() {
-	// 	this.DOM = document.getElementById('splash-container');
-	// 	this.DOM.number = this.DOM.querySelector('#number');
-	// 	charming(this.DOM.number)
-	// 	this.DOM.number = Array.from(this.DOM.number.querySelectorAll('span')).sort(() => 0.5 - Math.random());
-	// 	this.DOM.number.forEach(letter => letter.dataset.initial = letter.innerHTML);
-
-	// 	// console.log(this.DOM.number);
-		
-	// 	// console.log(this.DOM.number[0]);
-	// 	randomizeLetters(this.DOM.number);
-	// }
 
 	init() {
 		window.addEventListener('scroll', () => {
-			const a = (document.documentElement.scrollHeight - window.pageYOffset) -  window.innerHeight;
+			const a = window.innerHeight - window.pageYOffset;
 			const b = window.innerHeight;
-			anime({
-				targets: '#splashpage-content',
-				opacity: a/b,
-				duration: 0.1
-			})
+			if((a/b) > 0) {
+				anime({
+					targets: '#splashpage-content',
+					opacity: a/b,
+					duration: 0.1
+				});
+			}			
 		});
 	}
 
@@ -130,7 +104,7 @@ class Home extends React.Component {
 									</div>
 								</Col>
 							</Row>
-							<p id="scroll-down">Scroll down to see some of my works</p>
+							<h3 id="scroll-down">Scroll down to see some of my works</h3>
 						</div>
 					</Container>
 				</div>
