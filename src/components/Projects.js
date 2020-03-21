@@ -16,6 +16,7 @@ class Projects extends React.Component {
 			loop: true
 		});
 	}
+	
 	render() {
 		const projects = projectsAPI.projects;
 		return(
@@ -35,15 +36,21 @@ class Projects extends React.Component {
 										<h3>{ project.title }</h3>
 									</Row>
 									<Row>
-										<img className="project__img" src={ require(`../assets/img/${project.img}`) } alt=""/>
+										<img style={{paddingTop: '10px', paddingBottom: '25px' }} className="project-img" src={ require(`../assets/img/${project.img}`) } alt=""/>
 									</Row>
 									<Row>
-										<p>{ project.description }</p>
+										<p>{ project.description }
+											<a href={`${project.link}`}
+												target="_blank" 
+												rel="noopener noreferrer"
+												className="project-link">
+													&nbsp; { project.linkText }
+											</a>
+										</p>
 									</Row>
 								</Col>
 							</div>
 						))
-
 					}
 				</div>
 			</div>

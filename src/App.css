@@ -40,23 +40,6 @@
   color: #6e6e6e;
 }
 
-/***For Other Browsers ***/
-/* ::-o-selection {
-  background-color: #352e7e;
-  color: #fff;
-}
-
-::-ms-selection {
-  background-color: #352e7e;
-  color: #fff;
-} */
-
-/*** For Webkit ***/
-/* ::-webkit-selection {
-  background-color: #352e7e;
-  color: #fff;
-} */
-
 html, .root {
   font-size: 18px;
   line-height: 27px;
@@ -113,7 +96,14 @@ hr, .hr {
 }
 a, b, i, strong, em, small, code {
   line-height: 0;
+  text-decoration: none;
 }
+
+a:hover {
+  text-decoration: none;
+  /* color: gray; */
+}
+
 sub, sup {
   line-height: 0;
   position: relative;

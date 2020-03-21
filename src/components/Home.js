@@ -5,43 +5,6 @@ import Col from 'react-bootstrap/Col';
 import { Row } from 'react-bootstrap';
 import anime from 'animejs';
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-// Equation of a line (y = mx + b ).
-const lineEq = (y2, y1, x2, x1, currentVal) => {
-	const m = (y2 - y1) / (x2 - x1);
-	const b = y1 - m * x1;
-	return m * currentVal + b;
-};
-
-const chars = ['-','+','1','2','3','4','5','6','7','8','9'];
-const charsTotal = chars.length;
-
-const randomizeLetters = (letters) => {
-	return new Promise((resolve, reject) => {
-		const lettersTotal = letters.length;
-		let cnt = 0;
-
-		letters.forEach((letter, i) => { 
-			let loopTimeout;
-			
-			const loop = async () => {
-				letter.innerHTML = await chars[getRandomInt(0,charsTotal-1)];
-				loopTimeout = await setTimeout(loop, getRandomInt(50,400));
-			};
-
-			loop();
-
-			const timeout = setTimeout(() => {
-				clearTimeout(loopTimeout);
-				letter.style.opacity = 1;
-				letter.innerHTML = letter.dataset.initial;
-				++cnt;
-				if ( cnt === lettersTotal ) resolve();
-			}, i*lineEq(200,0,8,500,lettersTotal) + 2000);
-		});
-	});
-};
-
 class Home extends React.Component {
 
 	constructor() {
@@ -92,15 +55,15 @@ class Home extends React.Component {
 								<Col md={6}>
 									<div className="contact">
 										<p>Contact</p>
-										<p>malcolmgourdine@gmail.com</p>
-										<p>347 742 9627</p>
+										<a href="mailto:malcolmgourdine@gmail.com">malcolmgourdine@gmail.com</a>
+										<p>+ 347 742 0627</p>
 									</div>
 								</Col>
 								<Col md={6}>
 									<div className="contact">
 										<p>Social Media</p>
-										<p>Instagram</p>
-										<p>Flickr</p>
+										<a href="https://www.instagram.com/ideal_poster/">Instagram</a> <br/>
+										<a href="https://github.com/ideal-poster">Github</a>
 									</div>
 								</Col>
 							</Row>

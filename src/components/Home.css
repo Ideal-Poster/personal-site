@@ -7,19 +7,17 @@
 	font-family: halyard-micro,sans-serif;
 	position: absolute;
 	top: 0px;
-	width: 2325px;
 	margin: 0;
 }
 
 .splashpage-banner-extension {
-	left: 2355px;
-	width: 2325px;
+	left: 2330px;
 }
 
 #splash-container {
 	font-family: Suisse Int;
 	background:
-    linear-gradient(140deg, rgb(0, 66, 128,1), rgba(0, 66, 128, 0.3) 120.71%),
+    	linear-gradient(140deg, rgb(0, 66, 128,1), rgba(0, 66, 128, 0.3) 120.71%),
 		linear-gradient(20deg, rgb(0, 107, 112, 1), rgba(0, 107, 112, 0.3) 70%),
 		linear-gradient(10deg, rgb(223, 213, 213, 1), rgba(239, 33, 117, 0) 100%);
 	background: rgb(20, 20, 20);
@@ -28,7 +26,6 @@
 	font-style: normal;
 	padding-left: 15px;
 	padding-right: 15px;
-	/* padding-top: 100px; */
 	min-height: 100vh;
 }
 
@@ -45,6 +42,13 @@
 	letter-spacing: 0px;
 	font-family: Suisse Int;
 	padding-bottom: 10px;
+}
+.contact > * {
+	color: white;
+}
+
+.contact > a:hover {
+	color: gray;
 }
 
 #splashpage-content {
