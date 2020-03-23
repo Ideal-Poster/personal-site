@@ -42,10 +42,10 @@ class Home extends React.Component {
 				<div id="splash-container">
 					<Container fluid={true}>
 						<div id="splashpage-content">
-							<Row>
-								<h1 className="splashpage-banner splashpage-banner-extension">In The Streets Industries. In The Streets Industries.</h1>
-								<h1 className="splashpage-banner">In The Streets Industries. In The Streets Industries.</h1>
-							</Row>
+								<div id="splashpage-banner-container">
+									<h1 className="splashpage-banner splashpage-banner-extension">In The Streets Industries.</h1>
+									<h1 className="splashpage-banner">In The Streets Industries. In The Streets Industries.</h1>
+								</div>
 							<Row>
 								<Col sm={12}>
 									<h3 id="splash-text">Creative design and technology by Malcolm Gourine</h3>

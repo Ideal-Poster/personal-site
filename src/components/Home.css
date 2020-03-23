@@ -5,13 +5,20 @@
 
 .splashpage-banner {
 	font-family: halyard-micro,sans-serif;
-	position: absolute;
-	top: 0px;
-	margin: 0;
+
 }
 
 .splashpage-banner-extension {
-	left: 2330px;
+	left: 2350px;
+}
+
+#splashpage-banner-container {
+	position: absolute;
+	width: auto;
+}
+
+#splashpage-banner-container > * {
+	width: 2330px;
 }
 
 #splash-container {

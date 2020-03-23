@@ -47,24 +47,14 @@
 	padding-top: 100px;
 }
 
+.project-img-container{
+	width: 100%;
+}
 .project-img {
 	width: 100%;
 	height: auto;
 	position: relative;
 	display: inline-block;
-}
-
-.overlay__container {
-	height: 100%;
-}
-
-.overlay {
-	height: 0%;
-	right: -1.5px;
-	bottom: -1.5px;
-	left: -1.5px;
-	position: static;
-	z-index: 2;
-	transform-origin: left;
-	overflow: hidden;
+	padding-top: '10px';
+	padding-bottom: '25px'
 }

@@ -36,7 +36,9 @@ class Projects extends React.Component {
 										<h3>{ project.title }</h3>
 									</Row>
 									<Row>
-										<img style={{paddingTop: '10px', paddingBottom: '25px' }} className="project-img" src={ require(`../assets/img/${project.img}`) } alt=""/>
+										<div className="project-img-container">
+											<img className="project-img" src={ require(`../assets/img/${project.img}`) } alt=""/>
+										</div>
 									</Row>
 									<Row>
 										<p>{ project.description }
