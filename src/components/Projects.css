@@ -26,11 +26,11 @@
 
 #projects-container {
 	margin-top: 60px;
-	padding-bottom: 120px;
+	padding-bottom: 60px;
 }
 
 .project-container {
-	padding-bottom: 40px;
+	padding-bottom: 70px;
 }
 
 .splashpage-banner {
@@ -53,4 +53,9 @@
 	display: inline-block;
 	padding-top: '10px';
 	padding-bottom: '25px'
+}
+
+.heroku-message {
+	color: rgb(169, 169, 169);
+	padding-bottom: 8px;
 }

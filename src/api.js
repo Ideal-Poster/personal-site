@@ -1,3 +1,5 @@
+const herokuMessage = '* Heroku server may be sleeping. If Error please refresh page.';
+
 const projectsAPI = {
   projects: [
     { 
@@ -8,7 +10,8 @@ const projectsAPI = {
         a preview window that appears when the cursor hover over a selection. The site
         currently contiains filler art.`,
       linkText: 'It can currently be found here.',
-      link: 'https://dry-dusk-45182.herokuapp.com/'
+      link: 'https://dry-dusk-45182.herokuapp.com/',
+      herokuMessage 
     },
     { 
       title: 'Unslpash Search',
@@ -18,8 +21,8 @@ const projectsAPI = {
         attributes to create and artistic grid pattern. It also features some slick
         animations.`,
       linkText: 'Click here to see it.',
-      link: 'https://peaceful-wildwood-31115.herokuapp.com/'
-
+      link: 'https://peaceful-wildwood-31115.herokuapp.com/',
+      herokuMessage
     },
     { 
       title: 'Rebel Shop',
