@@ -56,7 +56,7 @@ class Home extends React.Component {
 									<div className="contact">
 										<p>Contact</p>
 										<a href="mailto:malcolmgourdine@gmail.com">malcolmgourdine@gmail.com</a>
-										<p>+ 347 742 0627</p>
+										<p>+ 347 752 0627</p>
 									</div>
 								</Col>
 								<Col md={6}>
