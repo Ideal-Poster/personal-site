@@ -41,8 +41,11 @@ class Projects extends React.Component {
 										</div>
 									</Row>
 									<Row>
-										<p className="heroku-message">{ project.herokuMessage }</p>
-										<p>{ project.description }
+										{
+											project.herokuMessage &&
+											<p className="heroku-message">{ project.herokuMessage }</p>
+										}
+										<p className="project-description">{ project.description }
 											<a href={`${project.link}`}
 												target="_blank" 
 												rel="noopener noreferrer"

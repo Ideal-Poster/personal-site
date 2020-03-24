@@ -56,6 +56,10 @@
 }
 
 .heroku-message {
-	color: rgb(169, 169, 169);
-	padding-bottom: 8px;
+	padding-top: 10px;
+	/* padding-bottom: 12px; */
+}
+
+.project-description {
+	padding-top: 12px;
 }
