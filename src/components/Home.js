@@ -43,25 +43,25 @@ class Home extends React.Component {
 					<Container fluid={true}>
 						<div id="splashpage-content">
 								<div id="splashpage-banner-container">
-									<h1 className="splashpage-banner splashpage-banner-extension">In The Streets Industries.</h1>
-									<h1 className="splashpage-banner">In The Streets Industries. In The Streets Industries.</h1>
+									<h1 className="splashpage-banner splashpage-banner-extension">Local Area Studios. Local Area</h1>
+									<h1 className="splashpage-banner">Local Area Studios. Local Area Studios.</h1>
 								</div>
 							<Row>
 								<Col sm={12}>
-									<h3 id="splash-text">Creative design and technology by Malcolm Gourine</h3>
+									<h3 id="splash-text">Creative design and technology by Malcolm Gourdine</h3>
 								</Col>
 							</Row>
 							<Row>
 								<Col md={6}>
 									<div className="contact">
 										<p>Contact</p>
-										<a href="mailto:malcolmgourdine@gmail.com">malcolmgourdine@gmail.com</a>
+										<a href="mailto:malcolmgourdine@protonmail.com">malcolmgourdine@protonmail.com</a>
 										<p>+ 347 752 0627</p>
 									</div>
 								</Col>
 								<Col md={6}>
 									<div className="contact">
-										<p>Social Media</p>
+										<br/>
 										<a href="https://www.instagram.com/ideal_poster/">Instagram</a> <br/>
 										<a href="https://github.com/ideal-poster">Github</a>
 									</div>

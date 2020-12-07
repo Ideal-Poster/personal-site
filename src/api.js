@@ -3,18 +3,18 @@ const herokuMessage = '* Heroku server may be sleeping. If Error please refresh 
 const projectsAPI = {
   projects: [
     { 
-      title: 'Alex Brindis',
-      img: 'alex.gif' ,
+      title: 'Local Language',
+      img: 'giphy.gif' ,
       description: 
-        `A Gallery Site created to display the work of Alex Brindis.The site features 
-        a preview window that appears when the cursor hover over a selection. The site
-        currently contiains filler art.`,
+        `Local Language is an app designed to help friends share places in their 
+        area where hey can speak and practice languages. It is also my Flatiron 
+        School final project, revisited and improved.`,
       linkText: 'It can currently be found here.',
       link: 'https://dry-dusk-45182.herokuapp.com/',
-      herokuMessage 
+      // herokuMessage 
     },
     { 
-      title: 'Unslpash Search',
+      title: 'Unslpash Portal',
       img: 'unsplash.gif',
       description:
         `A simple site created to search the Unsplash photo api. It uses css grid
@@ -22,7 +22,7 @@ const projectsAPI = {
         animations.`,
       linkText: 'Click here to see it.',
       link: 'https://peaceful-wildwood-31115.herokuapp.com/',
-      herokuMessage
+      // herokuMessage
     },
     { 
       title: 'Rebel Shop',
@@ -30,7 +30,7 @@ const projectsAPI = {
       description:
         `Rebel Shop is a online store I created to test my ability to create a
         user authentication system using Javascript web tokens. The site uses a Postgres database and
-        GraphQL. It is currently being configured to go live on web servers.`,
+        GraphQL.`,
     }
 
   ]

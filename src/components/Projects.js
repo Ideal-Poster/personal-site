@@ -33,7 +33,7 @@ class Projects extends React.Component {
 							<div className="project-container">
 								<Col md={{ span: 8, offset: 2 }} lg={{ span: 6, offset: 3 }}>
 									<Row>
-										<h3>{ project.title }</h3>
+										<h3 className="project-title">{ project.title }</h3>
 									</Row>
 									<Row>
 										<div className="project-img-container">
